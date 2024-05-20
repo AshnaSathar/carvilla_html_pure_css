@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .sticky {
+            background-color: black;
+            position: fixed;
+            z-index: 3;
+            top: 0;
+            padding-bottom: 15px;
+            align-items: center;
+            width: 100%;
+        }
+        .row-container_expanded {
+                padding-top: 20px;
+                height: 50%;
+                width: 100%;
+                display: flex; 
+                align-items: center; 
+                align-content: center;
+                gap: 10px;
+            }
+    </style>
+</head>
+<body>
+    <div class="body">
+        <div class="stack-container" id="home">
+            <img class="fc4" src="assets/welcome-banner.jpg">
+            <div class="transparent-container">
+                <div class="row-container" id="rowContainer">
+                    <div style="display: flex;flex-direction: row;">
+                        <svg onclick="toggle_state()" id="menu_icon" class="menuIcon" fill="" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"/></svg>
+                        <heading >CARVILLA</heading>
+                    </div>
+                    <div class="row-box-end">
+                            <a href="#home" style="text-decoration:none">
+                                <h3>HOME</h3>
+                            </a>
+                            <a href="#service" style="text-decoration:none">
+                                <h3>SERVICE</h3>
+                            </a>
+                            <a href="#featured_cars" style="text-decoration:none">
+                                <h3>FEATURED CARS</h3>
+                            </a>
+                            <a href="#new_cars" style="text-decoration:none">
+                                <h3>NEW CARS</h3>
+                            </a> 
+                            <a href="#brands" style="text-decoration:none">
+                                <h3>BRANDS</h3>
+                            </a>
+                            <a href="#contacts" style="text-decoration:none">
+                                <h3>CONTACT </h3>
+                            </a>
+                    </div>
+                </div>
+                <div class="container-center">
+                    <div class="title">
+                    GET YOUR DESIRED CAR IN REASONABLE PRICE
+                    </div>
+                    <div class="subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                    <div style="padding: 30px;">
+                        <button class="button">
+                            Contact Us
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <form class="search-form">
+                <div class="form-group">
+                    <label for="year" class="label_style">Select Year</label>
+                    <select class="select_style" name="year" id="year">
+                        <option value=""year name="year">Year</option>
+                        <option value="2000">2000</option>
+                        <option value="2002">2002</option>
+                        <option value="2004">2004</option>
+                    </select>  
+                </div>
+                <div class="form-group">
+                    <label for="make" class="label_style">Select Make</label>
+                    <select class="select_style" name="make" id="make">
+                        <option value="make">Make</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="holden">Holden</option>
+                        <option value="mercedes_benz">Mercedes Benz</option>
+                    </select>  
+                </div>
+                <div class="form-group">
+                    <label for="model"class="label_style">Select Model</label>
+                    <select class="select_style" name="model" id="model">
+                        <option value="model">Model</option>
+                        <option value="kia_rio">Kia-Rio</option>
+                        <option value="mitsubishi">Mitsubishi</option>
+                        <option value="ford">Ford</option>
+                    </select>  
+                </div>
+                <div class="form-group">
+                    <label for="style"class="label_style">Body Style</label>
+                    <select class="select_style" name="style" id="style">
+                        <option value="style">Style</option>
+                        <option value="sedan">Sedan</option>
+                        <option value="van">Van</option>
+                        <option value="roadster">Roadster</option>
+                    </select>  
+                </div>
+                <div class="form-group">
+                    <label for="condition" class="label_style">Car Condition</label>
+                    <select class="select_style" name="condition" id="condition">
+                        <option value="condition">Condition</option>
+                        <option value="something">Something</option>
+                        <option value="something">Something</option>
+                        <option value="something">Something</option>
+                    </select>  
+                </div>
+                <div class="form-group">
+                    <label for="price" class="label_style">Select Price</label>
+                    <select class="select_style" name="price" id="price">
+                        <option value="price">Price</option>
+                        <option value="50">$500.0</option>
+                        <option value="100">$100</option>
+                        <option value="200">$200</option>
+                    </select>  
+                </div>
+   
+                <button value="Search" name="Search"class="search-button" >Search</button>
+
+            </form>
+        </div>
+        <div class="row-container1" id="service">
+            <div class="box">
+                <div class="box_container">
+                <svg class="icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                width="225.000000pt" height="225.000000pt" viewBox="0 0 225.000000 225.000000"
+                preserveAspectRatio="xMidYMid meet">
+                <metadata>
+                Created by potrace 1.10, written by Peter Selinger 2001-2011
+                </metadata>
+                <g transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)"
+                fill="" stroke="none">
+                <path d="M290 2241 c-49 -10 -75 -29 -99 -72 -20 -36 -21 -49 -21 -521 0 -452
+                1 -486 19 -518 29 -54 88 -80 182 -80 l79 0 -25 -57 c-15 -33 -42 -70 -64 -90
+                -22 -18 -51 -56 -65 -85 l-26 -52 0 -315 c0 -298 1 -317 21 -357 25 -53 76
+                -87 121 -82 l33 3 -50 32 c-76 49 -79 57 -82 223 l-3 145 20 -36 c10 -20 33
+                -48 50 -63 28 -23 29 -26 10 -26 -11 0 -32 -11 -46 -25 -43 -43 -26 -138 32
+                -184 22 -17 41 -21 106 -21 44 0 89 5 101 11 70 37 92 137 40 191 l-27 28 66
+                0 66 0 -27 -28 c-20 -20 -30 -42 -35 -81 -9 -66 -32 -101 -91 -135 -25 -15
+                -45 -31 -45 -35 0 -14 80 5 109 26 39 28 71 99 71 155 l0 48 464 0 464 0 4
+                -65 c6 -94 53 -149 139 -165 l44 -8 -26 21 c-15 12 -43 34 -62 50 -37 28 -57
+                74 -57 130 0 18 -11 39 -29 58 l-29 29 65 0 65 0 -32 -36 c-27 -31 -31 -42
+                -26 -75 12 -89 55 -119 168 -119 93 0 116 10 149 64 14 23 19 26 19 12 0 -18
+                -41 -63 -95 -103 l-30 -22 37 0 c28 -1 46 7 74 31 63 56 64 62 64 415 0 298
+                -2 321 -21 363 -11 25 -35 61 -53 80 -22 23 -58 92 -105 201 -40 91 -79 176
+                -88 189 -9 12 -34 31 -57 41 -37 17 -69 19 -318 19 l-278 0 0 266 0 266 -52
+                53 c-29 29 -111 108 -183 175 -121 114 -169 149 -184 134 -3 -3 81 -90 187
+                -192 l192 -187 0 -253 0 -254 29 -28 28 -29 -27 -26 c-19 -18 -30 -42 -35 -73
+                -5 -31 -16 -55 -36 -75 -40 -40 -49 -27 -10 15 l31 33 0 313 0 313 -25 24
+                c-16 17 -35 25 -60 25 -41 0 -42 3 -15 30 11 11 20 27 20 36 0 20 -117 142
+                -172 180 l-40 28 -24 -27 c-21 -24 -24 -38 -24 -106 0 -65 4 -83 21 -105 23
+                -29 21 -40 -4 -30 -26 10 -37 62 -37 179 0 161 9 155 -244 155 -120 0 -205 -4
+                -217 -11 -11 -5 -29 -25 -39 -42 -16 -26 -20 -28 -20 -12 0 12 23 41 57 72 32
+                29 56 52 53 52 -3 -1 -21 -4 -40 -8z m410 -222 c0 -203 6 -208 213 -209 l147
+                0 0 -314 c0 -273 -2 -317 -16 -330 -13 -14 -62 -16 -383 -16 -302 0 -371 2
+                -380 14 -16 20 -16 952 0 972 9 11 54 14 215 14 l204 0 0 -131z m285 -101 c19
+                -17 16 -18 -83 -18 l-102 0 0 97 0 96 83 -78 c45 -43 91 -87 102 -97z m829
+                -723 c19 -38 37 -81 41 -95 16 -53 87 -185 124 -234 22 -28 42 -64 46 -81 6
+                -27 5 -26 -15 10 -32 61 -83 104 -130 111 l-41 7 25 26 c14 15 26 33 26 40 0
+                7 -23 67 -52 133 -36 83 -62 128 -85 148 -41 37 -42 47 -2 23 21 -12 41 -40
+                63 -88z m-82 37 c9 -9 41 -74 72 -144 l54 -128 -33 0 c-28 0 -33 4 -38 28 -9
+                46 -69 125 -117 154 -89 55 -201 55 -290 0 -48 -29 -108 -108 -117 -154 l-5
+                -28 -374 0 -374 0 22 44 21 45 253 3 c237 3 254 4 280 24 47 35 67 70 72 126
+                l4 53 277 -3 c244 -3 278 -5 293 -20z m-1463 -106 c14 -16 19 -25 11 -21 -32
+                17 -60 49 -60 69 1 21 1 21 12 1 6 -11 22 -33 37 -49z m1139 -33 c-44 -37 -64
+                -62 -79 -96 -11 -25 -9 -31 16 -57 l29 -30 -63 0 -63 0 31 35 c17 20 31 41 31
+                48 0 22 51 88 83 108 46 28 54 23 15 -8z m242 12 c34 -17 72 -65 93 -116 8
+                -20 27 -45 42 -57 l28 -22 -68 0 -67 0 26 30 c21 26 23 34 15 59 -6 17 -32 50
+                -59 75 -53 50 -54 54 -10 31z m-1080 -5 c13 -9 13 -10 -1 -10 -22 0 -68 -51
+                -79 -89 -8 -28 -6 -36 15 -57 31 -30 31 -34 3 -34 -41 0 -103 -39 -141 -88
+                -20 -27 -37 -55 -38 -63 0 -8 -3 -9 -5 -3 -9 20 15 62 66 119 46 51 90 128 90
+                158 0 17 -42 57 -59 57 -14 0 -14 1 -1 10 8 5 42 10 75 10 33 0 67 -5 75 -10z
+                m1026 -29 c36 -16 73 -53 98 -98 6 -10 -31 -13 -169 -13 l-176 0 15 28 c29 56
+                100 101 161 101 17 0 49 -8 71 -18z m351 -252 c18 -23 33 -51 33 -63 5 -328 3
+                -378 -19 -399 l-22 -22 -765 0 -766 0 -24 28 c-23 27 -24 33 -24 190 0 89 4
+                178 10 197 5 18 28 52 50 74 l39 41 728 -2 727 -3 33 -41z m92 -366 c-1 -164
+                -5 -280 -8 -258 -10 58 -28 85 -61 91 l-29 6 28 24 c54 45 61 75 61 263 0 94
+                2 171 5 171 3 0 4 -134 4 -297z m-1535 -213 l106 0 0 -50 c0 -74 -22 -90 -125
+                -90 -102 0 -117 12 -123 101 -4 59 -4 61 16 50 11 -6 68 -11 126 -11z m1482
+                -2 c-3 -13 -6 -40 -6 -60 0 -61 -25 -78 -116 -78 -41 0 -84 4 -94 10 -21 11
+                -40 60 -40 101 l0 29 108 0 c59 0 114 5 122 10 24 16 33 12 26 -12z"/>
+                <path d="M398 1693 c-22 -5 -35 -50 -21 -72 16 -25 248 -29 274 -5 24 22 24
+                39 -1 64 -18 18 -32 20 -127 19 -60 -1 -116 -3 -125 -6z"/>
+                <path d="M388 1509 c-22 -12 -23 -52 -2 -73 23 -24 515 -24 538 0 20 20 20 48
+                0 68 -13 14 -51 16 -267 16 -153 0 -259 -5 -269 -11z"/>
+                <path d="M382 1328 c-16 -16 -15 -53 3 -68 10 -8 84 -12 270 -12 186 0 260 4
+                270 12 18 15 19 52 3 68 -17 17 -529 17 -546 0z"/>
+                <path d="M461 716 c-8 -9 -11 -56 -9 -142 l3 -129 174 -3 c119 -2 178 1 187 9
+                11 9 14 42 14 135 0 112 -2 124 -19 134 -11 6 -88 10 -179 10 -124 0 -162 -3
+                -171 -14z m71 -59 c-42 -44 -45 -101 -5 -147 l26 -32 -29 4 -29 3 -3 89 c-2
+                49 -1 95 2 103 3 7 20 13 38 13 l32 0 -32 -33z m246 25 c9 -6 12 -34 10 -103
+                l-3 -94 -27 -3 c-34 -4 -35 6 -3 37 37 34 34 90 -6 136 -31 35 -31 35 -8 35
+                13 0 30 -4 37 -8z m-38 -102 l0 -50 -100 0 -100 0 0 50 0 50 100 0 100 0 0
+                -50z"/>
+                <path d="M1532 718 c-17 -17 -17 -249 0 -266 17 -17 339 -17 356 0 8 8 12 53
+                12 135 0 111 -2 123 -19 133 -29 15 -334 13 -349 -2z m70 -61 c-42 -44 -45
+                -101 -5 -147 l26 -32 -29 4 -29 3 -3 94 c-3 101 1 111 47 111 25 0 25 0 -7
+                -33z m246 25 c9 -6 12 -34 10 -103 l-3 -94 -29 -3 -28 -4 26 35 c37 48 35 96
+                -5 142 -31 35 -31 35 -8 35 13 0 30 -4 37 -8z m-38 -102 l0 -50 -100 0 -100 0
+                0 50 0 50 100 0 100 0 0 -50z"/>
+                <path d="M956 674 c-22 -22 -20 -50 6 -68 18 -13 57 -16 215 -16 180 0 194 1
+                213 20 25 25 25 42 2 63 -27 25 -412 25 -436 1z"/>
+                <path d="M962 524 c-26 -18 -28 -46 -6 -68 13 -14 47 -16 218 -16 184 0 204 2
+                219 18 22 24 21 38 -3 62 -19 19 -33 20 -213 20 -158 0 -197 -3 -215 -16z"/>
+                </g>
+                </svg>
+                </div>
+                <h2>Largest Dealership Of Cars</h2>
+                <h4>Excepteur sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+                <hr class="horiz_line">
+            </div>
+            <div class="box">
+                <div class="box_container">
+                    <svg class="icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                    width="225.000000pt" height="225.000000pt" viewBox="0 0 225.000000 225.000000"
+                    preserveAspectRatio="xMidYMid meet">
+                   <metadata>
+                   Created by potrace 1.10, written by Peter Selinger 2001-2011
+                   </metadata>
+                   <g transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)"
+                   fill="currentColor" stroke="none">
+                   <path d="M547 1753 c-3 -5 -31 -110 -62 -234 l-57 -226 -33 -12 c-43 -15 -91
+                   -70 -104 -118 -6 -21 -11 -106 -11 -188 0 -137 2 -155 22 -195 13 -25 37 -54
+                   55 -65 l32 -20 1 -97 c0 -92 1 -97 26 -117 23 -18 40 -21 138 -21 149 1 166
+                   15 166 139 l0 71 415 0 415 0 0 -79 c0 -70 3 -83 24 -108 24 -27 26 -28 131
+                   -28 105 0 107 1 131 28 21 25 24 38 25 120 l0 92 42 30 c25 19 47 44 54 65 15
+                   44 17 321 2 373 -13 48 -61 103 -102 118 l-32 11 -44 217 c-24 119 -48 224
+                   -53 234 -8 16 -47 17 -593 17 -321 0 -586 -3 -588 -7z m1152 -186 c13 -67 32
+                   -155 41 -194 l17 -73 -38 0 c-36 0 -39 2 -39 29 0 48 -58 122 -119 154 -133
+                   67 -282 0 -322 -145 l-10 -38 -365 0 c-343 0 -365 1 -360 18 3 9 23 91 46 182
+                   23 91 43 171 45 178 3 9 121 12 542 12 l538 0 24 -123z m-159 -149 c37 -25 65
+                   -61 75 -95 l6 -23 -160 0 c-178 0 -179 0 -138 61 53 78 148 103 217 57z m318
+                   -222 l37 -34 3 -162 c4 -190 -1 -208 -64 -242 l-44 -23 0 -107 0 -108 -85 0
+                   -85 0 0 110 0 110 -485 0 -485 0 0 -104 0 -105 -91 -3 c-53 -2 -94 1 -97 7 -4
+                   6 -5 53 -3 105 l3 95 -37 14 c-66 23 -75 52 -75 238 0 160 0 162 27 193 14 18
+                   36 36 47 40 12 5 330 9 709 9 l687 1 38 -34z"/>
+                   <path d="M471 1076 c-70 -39 -67 -148 6 -185 12 -6 67 -11 123 -11 98 0 102 1
+                   130 29 36 36 46 73 29 112 -21 53 -60 69 -169 69 -60 -1 -104 -6 -119 -14z
+                   m220 -72 c9 -11 10 -20 2 -32 -15 -25 -182 -30 -200 -6 -9 12 -9 22 -2 35 8
+                   16 22 19 98 19 69 0 92 -4 102 -16z"/>
+                   <path d="M810 1055 l0 -35 315 0 315 0 0 35 0 35 -315 0 -315 0 0 -35z"/>
+                   <path d="M1528 1073 c-47 -29 -61 -89 -34 -142 21 -40 56 -51 166 -51 95 0
+                   101 1 130 28 57 50 42 146 -26 172 -44 17 -205 12 -236 -7z m223 -69 c9 -11
+                   10 -20 2 -32 -15 -25 -182 -30 -200 -6 -9 12 -9 22 -2 35 8 16 22 19 98 19 69
+                   0 92 -4 102 -16z"/>
+                   <path d="M810 915 l0 -35 315 0 315 0 0 35 0 35 -315 0 -315 0 0 -35z"/>
+                   </g>
+                   </svg>
+                  
+                </div>
+                <h2>Unlimited Repair Warranty</h2>
+                <h4>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+                <hr class="horiz_line">
+            </div>
+            <div class="box">
+                <div class="box_container">
+                <svg class="icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                width="225.000000pt" height="225.000000pt" viewBox="0 0 225.000000 225.000000"
+                preserveAspectRatio="xMidYMid meet">
+               <metadata>
+               Created by potrace 1.10, written by Peter Selinger 2001-2011
+               </metadata>
+               <g transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)"
+               fill="currentColor" stroke="none">
+               <path d="M1176 2198 c-11 -15 -16 -45 -16 -85 l0 -63 -323 0 c-179 0 -337 -4
+               -356 -10 -46 -13 -93 -47 -120 -85 -12 -18 -65 -149 -117 -291 -91 -244 -99
+               -262 -146 -311 -59 -63 -90 -129 -86 -181 l3 -37 33 70 c18 38 56 96 84 128
+               48 55 59 79 145 309 51 138 102 265 113 284 12 18 38 43 58 56 36 23 42 23
+               372 26 325 3 335 4 357 24 17 16 23 33 23 64 0 51 8 74 25 74 10 0 14 -26 17
+               -95 4 -132 12 -139 156 -143 60 -2 110 -9 114 -15 3 -5 9 -35 13 -65 4 -31 13
+               -65 21 -78 14 -20 148 -84 178 -84 8 0 34 15 59 34 87 66 78 67 173 -25 52
+               -52 84 -90 84 -104 0 -11 -18 -44 -40 -74 -22 -29 -40 -59 -40 -67 0 -25 62
+               -162 80 -179 10 -9 48 -20 85 -25 36 -4 77 -15 90 -24 32 -21 38 -20 30 7 -12
+               40 -43 57 -102 57 -57 0 -93 13 -93 33 0 7 -13 39 -29 72 l-28 60 48 56 c71
+               82 69 91 -49 210 -117 119 -125 121 -209 50 -50 -42 -62 -48 -78 -38 -11 6
+               -45 21 -75 33 -50 21 -56 26 -62 61 -4 21 -7 55 -7 75 -1 27 -8 42 -28 58 -25
+               19 -38 21 -136 19 l-109 -3 -2 106 c-1 119 -10 138 -62 138 -23 0 -38 -7 -48
+               -22z"/>
+               <path d="M500 1959 c-32 -13 -68 -47 -86 -82 -17 -33 -139 -360 -149 -400 -11
+               -42 25 -77 80 -77 50 0 73 22 99 92 24 65 95 141 164 175 77 38 190 39 270 4
+               65 -29 144 -113 168 -178 33 -91 86 -119 132 -70 21 23 22 31 22 261 l0 237
+               -25 24 -24 25 -313 -1 c-183 0 -323 -4 -338 -10z m660 -274 l0 -245 -29 0
+               c-25 0 -30 5 -36 33 -20 91 -104 189 -202 234 -191 88 -427 -16 -490 -214
+               l-17 -53 -49 0 c-43 0 -48 2 -42 18 4 9 40 107 81 217 74 198 91 230 129 246
+               11 4 163 8 338 8 l317 1 0 -245z"/>
+               <path d="M1266 1868 c-13 -18 -16 -55 -16 -195 0 -214 -1 -212 117 -212 98 0
+               164 -20 228 -69 123 -93 173 -250 125 -391 -28 -83 -70 -142 -135 -186 -67
+               -47 -131 -65 -225 -65 -112 0 -110 4 -110 -213 0 -168 1 -177 22 -197 18 -16
+               35 -20 93 -20 63 0 74 3 95 25 15 16 24 41 28 74 5 57 19 73 77 91 22 7 66 26
+               97 41 32 16 63 29 70 29 7 0 33 -16 57 -35 62 -49 88 -46 145 15 25 27 46 55
+               46 63 0 8 -18 40 -39 72 -44 65 -46 46 13 180 50 113 47 109 108 120 80 14 98
+               34 98 107 0 33 -4 68 -10 78 -11 21 -60 40 -105 40 -35 0 -59 21 -70 60 -4 14
+               -23 60 -42 102 l-36 78 29 40 c53 73 57 86 40 119 -19 35 -84 91 -107 91 -9 0
+               -36 -15 -61 -34 -25 -19 -51 -36 -59 -38 -8 -1 -54 14 -104 35 -145 60 -139
+               56 -148 117 -12 84 -33 100 -128 100 -69 0 -80 -3 -93 -22z m178 -40 c3 -13 6
+               -37 6 -55 0 -63 14 -79 87 -103 37 -12 92 -35 120 -51 29 -16 63 -29 76 -29
+               12 0 45 20 74 45 l51 45 46 -46 46 -46 -45 -51 c-53 -61 -55 -81 -16 -151 16
+               -28 39 -81 51 -119 23 -73 39 -87 93 -87 19 0 49 -3 66 -6 31 -6 31 -7 31 -69
+               l0 -62 -72 -7 c-39 -3 -77 -11 -84 -17 -7 -6 -22 -40 -34 -77 -12 -37 -35 -90
+               -51 -118 -16 -28 -29 -60 -29 -70 0 -10 20 -43 44 -74 l45 -57 -44 -43 -44
+               -43 -43 35 c-78 63 -81 64 -156 25 -37 -19 -92 -42 -122 -52 -71 -22 -90 -44
+               -90 -105 0 -79 -2 -80 -91 -80 l-79 0 0 178 0 177 103 0 c90 0 109 3 160 27
+               161 76 259 255 230 424 -37 212 -225 361 -430 340 l-63 -7 0 176 0 175 79 0
+               c73 0 79 -2 85 -22z"/>
+               <path d="M650 1643 c-56 -20 -143 -105 -160 -157 -11 -34 -10 -39 11 -62 22
+               -24 23 -24 244 -24 221 0 222 0 244 24 21 23 22 28 11 62 -18 55 -104 137
+               -164 157 -61 21 -126 21 -186 0z m218 -60 c44 -27 95 -88 105 -125 5 -17 -11
+               -18 -229 -18 -263 0 -248 -6 -192 77 28 42 76 78 126 94 51 16 140 3 190 -28z"/>
+               <path d="M1321 1420 c-18 -4 -43 -18 -55 -29 -20 -21 -21 -30 -21 -282 l0
+               -261 33 -29 c28 -26 40 -29 95 -29 88 0 148 23 212 82 137 125 148 312 26 451
+               -63 71 -204 119 -290 97z m176 -62 c23 -11 62 -41 87 -68 125 -133 83 -349
+               -85 -435 -39 -21 -115 -29 -173 -21 l-46 7 0 264 0 265 28 6 c15 3 32 7 37 9
+               21 8 112 -8 152 -27z"/>
+               <path d="M225 1348 c-36 -19 -96 -82 -118 -123 -21 -38 -22 -52 -22 -295 0
+               -237 1 -257 20 -288 11 -18 34 -42 51 -53 30 -18 55 -19 516 -19 l485 0 21 23
+               c19 20 22 35 22 111 0 79 -2 89 -25 111 -22 23 -31 25 -120 25 -86 0 -96 2
+               -93 18 3 14 17 17 98 20 51 1 100 8 108 14 29 24 32 45 11 72 -19 24 -26 25
+               -117 28 -83 3 -97 6 -100 21 -3 15 7 17 93 17 89 0 98 2 120 25 24 23 25 30
+               25 144 0 177 49 161 -504 161 -309 -1 -457 -4 -471 -12z m935 -153 l0 -125
+               -106 0 c-124 0 -144 -7 -144 -55 0 -54 26 -65 147 -65 85 0 103 -3 103 -15 0
+               -12 -18 -15 -103 -15 -118 0 -147 -12 -147 -60 0 -52 19 -60 141 -60 l109 0 0
+               -95 0 -95 -486 0 -486 0 -34 34 -34 34 0 234 c0 128 5 250 10 270 6 20 31 59
+               56 87 l46 51 464 0 464 0 0 -125z"/>
+               <path d="M260 1110 c-18 -18 -20 -33 -20 -175 0 -211 -20 -195 255 -195 275 0
+               255 -16 255 195 0 211 20 195 -255 195 -202 0 -216 -1 -235 -20z m438 -32 c17
+               -17 17 -269 0 -286 -8 -8 -67 -12 -199 -12 -157 0 -190 3 -203 16 -13 12 -16
+               40 -16 135 0 66 5 129 10 140 10 18 23 19 203 19 137 0 196 -3 205 -12z"/>
+               <path d="M352 1027 c-18 -19 -22 -35 -22 -93 0 -61 3 -74 23 -92 21 -20 34
+               -22 139 -22 64 0 124 3 133 6 59 23 59 195 0 218 -9 3 -69 6 -134 6 -110 0
+               -119 -1 -139 -23z m278 -92 l0 -75 -135 0 -135 0 0 75 0 75 135 0 135 0 0 -75z"/>
+               <path d="M2218 991 c-17 -14 -48 -23 -88 -28 -34 -3 -71 -14 -83 -23 -12 -10
+               -38 -55 -56 -99 l-34 -82 32 -42 c50 -67 63 -95 52 -115 -15 -29 -158 -162
+               -173 -162 -8 0 -39 18 -68 40 -29 22 -63 40 -74 40 -34 0 -137 -44 -166 -70
+               -21 -20 -29 -38 -35 -85 -4 -33 -12 -66 -17 -72 -7 -9 -42 -13 -109 -13 -89 0
+               -100 -2 -126 -24 -25 -21 -28 -31 -31 -100 -3 -53 -8 -76 -17 -76 -22 0 -25
+               26 -25 220 l0 189 -26 20 c-25 20 -39 21 -290 21 -171 0 -272 -4 -287 -11 -34
+               -15 -45 -42 -50 -121 -5 -79 -30 -126 -85 -160 -34 -21 -49 -23 -168 -23 -125
+               0 -132 1 -171 27 -28 18 -52 48 -75 90 -22 41 -34 56 -36 44 -12 -63 47 -153
+               123 -187 58 -27 263 -27 320 0 90 41 134 116 135 229 l0 72 285 0 285 0 0
+               -208 c0 -240 4 -255 68 -250 51 4 64 32 59 131 l-4 77 123 0 c146 0 148 1 159
+               116 l7 71 36 11 c21 6 55 21 76 32 l40 20 30 -25 c67 -55 105 -77 123 -71 10
+               3 62 49 116 102 116 115 119 125 51 208 l-47 56 26 58 c14 31 28 67 32 80 5
+               19 14 22 58 23 83 2 110 11 125 42 19 40 11 52 -20 28z"/>
+               <path d="M100 513 c-20 -25 -21 -36 -17 -97 6 -76 22 -106 77 -143 29 -20 46
+               -23 135 -23 89 0 106 3 135 23 51 34 69 66 76 134 6 59 6 63 -24 92 l-30 31
+               -135 0 c-74 0 -148 3 -164 6 -25 5 -34 1 -53 -23z m222 -23 l150 0 -4 -70 c-3
+               -60 -8 -74 -31 -98 -27 -26 -30 -27 -142 -27 -112 0 -115 1 -142 28 -25 24
+               -28 36 -31 107 l-4 80 27 -10 c14 -5 94 -10 177 -10z"/>
+               </g>
+               </svg>
+                </div>
+                <h2>Insurance Support</h2>
+                <h4>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+            <hr class="horiz_line"></hr>
+            </div>
+        </div>
+
+        <!-- newest cars section starts here -->
+        <div class="new_car_section" id="new_cars">
+            <h4 class="subtitle">
+                Checkout the Latest Cars
+            </h4>
+            <h2 class="title">
+                Newest Cars
+            </h2>
+            <hr style="display: flex;width: 10%;margin-top: 2%;margin-bottom: 10%; color: blue;background-color: blue;height: 2px;">
+                <div class="slide_show_container">
+                    <div class="slide_show">
+                        <div class="slide_show_image">
+                            <img src="assets/chevralot.png" alt="Chevrolet Camaro ZA100">
+                        </div>
+                        <div class="slide_show_content">
+                            <div class="heading">Chevrolet Camaro ZA100</div>
+                            <div class="description">ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                            <button class="button">View Details</button>
+                        </div>
+                    </div>
+                    <div class="slide_show">
+                        <div class="slide_show_image">
+                            <img src="assets/bmw_series_3.png" alt="BMW Series 3 wagon">
+                        </div>
+                        <div class="slide_show_content">
+                            <div class="heading">BMW Series 3 wagon</div>
+                            <div class="description">ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                            <button class="button">View Details</button>
+                        </div>
+                    </div>
+                    <div class="slide_show">
+                        <div class="slide_show_image">
+                            <img src="assets/ferrarri_488.png" alt="Ferrari 488 Superfast">
+                        </div>
+                        <div class="slide_show_content">
+                            <div class="heading">Ferrari 488 Superfast</div>
+                            <div class="description">ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                            <button class="button">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align:center;padding-bottom:10%;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+
+        <!-- newest car section ends  -->
+
+        <!-- featured car section starts here -->
+        <div class="featured_cars" id="featured_cars">
+            <div class="subtitle">Checkout the featured cars</div>
+            <div class="title1">Featured Cars</div>
+            <hr style="display: flex;width: 10%;margin-top: 2%;margin-bottom: 10%; color: blue;background-color: blue;height: 2px;">
+            <div class="row">
+                <div class="column">
+                    <div class="featured_car_box">
+                        <div class="column">
+                            <img src="assets/car1.png">
+                            <hr width="100%">
+                            <h4>Model: 2017 3100Mi 240HP <br> automatic</h4>
+                        </div>
+                    </div>
+                    <div class="featured_car_content">
+                        <div class="featured_car_title">BMW 6-Series Gran Coupe</div>
+                        <div class="price">$66,575</div>
+                        <div class="description"> qui dolorem ipsuipisci velit, sed quia non.</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="featured_car_box">
+                        <div class="column">
+                            <img src="assets/fc2.png">
+                            <hr>
+                            <h4>Model: 2017 3100Mi 240HP <br> automatic</h4>
+                        </div>
+                    </div>
+                    <div class="featured_car_content">
+                        <div class="featured_car_title">Chevrolet Camaro WMV20</div>
+                        <div class="price">$99,395</div>
+                        <div class="description">qui dolorem ipsuipisci velit, sed quia non.</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="featured_car_box">
+                        <div class="column">
+                            <img src="assets/fc3.png">
+                            <hr>
+                            <h4>Model: 2017 3100Mi 240HP <br> automatic</h4>
+                        </div>
+                    </div>
+                    <div class="featured_car_content">
+                        <div class="featured_car_title">Lamborghini V520</div>
+                        <div class="price">$29,395</div>
+                        <div class="description"> qui dolorem ipsuipisci velit, sed quia non.</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="featured_car_box">
+                        <div class="column">
+                            <img src="assets/car4.png">
+                            <hr>
+                            <h4 >Model: 2017 3100Mi 240HP <br> automatic</h4>
+                        </div>
+                    </div> 
+                    <div class="featured_car_content">
+                        <div class="featured_car_title">Audi A3 Sedan</div>
+                        <div class="price">$89,395</div>
+                        <div class="description">Quisque vel lobortis orci, ut hendrerit lorem.</div>
+                    </div> 
+                </div>  
+            </div> 
+            <div class="row">
+                <div class="column">
+                    <div class="featured_car_box">
+                        <div class="column">
+                            <img src="assets/fc5.png">
+                            <hr>
+                            <h4 >Model: 2017 3100Mi 240HP <br> automatic</h4>
+                        </div>
+                    </div>
+                    <div class="featured_car_content">
+                        <div class="featured_car_title">BMW 6-Series Gran Coupe</div>
+                        <div class="price">$66,575</div>
+                        <div class="description">nisl facilisis quis. In eget consectetur mauris.</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="featured_car_box">
+                        <div class="column">
+                            <img src="assets/fc6.png">
+                            <hr>
+                            <h4>Model: 2017 3100Mi 240HP <br> automatic</h4>
+                        </div>
+                    </div>
+                    <div class="featured_car_content">
+                        <div class="featured_car_title">Chevrolet Camaro WMV20</div>
+                        <div class="price">$99,395</div>
+                        <div class="description"> qui dolorem ipsuipisci velit, sed quia non.</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="featured_car_box">
+                        <div class="column">
+                            <img src="assets/fc7.png">
+                            <hr>
+                            <h4>Model: 2017 3100Mi 240HP <br> automatic</h4>
+                        </div>
+                    </div>
+                    <div class="featured_car_content">
+                        <div class="featured_car_title">Lamborghini V520</div>
+                        <div class="price">$29,395</div>
+                        <div class="description">Phasellus sed commodo quam, in sagittis mi.</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="featured_car_box">
+                        <div class="column">
+                            <img src="assets/fc8.png">
+                            <hr>
+                            <h4>Model: 2017 3100Mi 240HP <br> automatic</h4>
+                        </div>
+                    </div> 
+                    <div class="featured_car_content">
+                        <div class="featured_car_title">Audi A3 Sedan</div>
+                        <div class="price">$89,395</div>
+                        <div class="description"> qui dolorem ipsuipisci velit, sed quia non.</div>
+                    </div> 
+                </div>  
+            </div> 
+        </div>
+        <!-- featured car section ends here -->
+        <!-- what our client says starts here -->
+        <div class="carousel-field">
+            <div class="title1">What Our Client Says</div>
+            <hr style="display: flex;width: 10%;margin-top: 2%;margin-bottom: 10%; color: blue;background-color: blue;height: 3px;">
+            <div class="carousel_row">
+                <div class="carousel_box" id="review1">
+                    <div class="circle_avatar">
+                        <img src="assets/john_deo.png">
+                    </div> 
+                    <h4>
+                        passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </h4>
+                    <br>
+                    <h3>John Deo</h3>
+                    <h3>Washington</h3> 
+                </div>
+                <div class="carousel_box" id="review2">
+                    <div class="circle_avatar">
+                        <img src="assets/tomas_lili.png">
+                    </div>
+                    <h4>and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years.</h4>
+                    <br>
+                    <h3>Tomas Lili</h3>
+                    <h3> New York</h3> 
+                </div>
+                <div class="carousel_box" id="review2">
+                    <div class="circle_avatar">
+                        <img src="assets/romi_rain.png">
+                    </div>
+                    <h4>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</h4>
+                    <br>
+                    <h3>Romi Rani </h3>
+                    <h3>London</h3> 
+                </div>
+            </div>
+        </div>
+            <!-- what out client says ends here -->
+            <div id="brands" style="display: flex;background-color: white; flex-direction: row;justify-content: space-around; padding: 8%;">
+                <img src="assets/br1.png">
+                <img src="assets/br2.png">
+                <img src="assets/br3.png">
+                <img src="assets/br4.png">
+                <img src="assets/br5.png">
+                <img src="assets/br6.png">
+            </div>
+
+            <div class="bottom_bar" id="contacts">
+                <div class="bottom_bar_container">
+                    <div class="row">
+                        <h2>CARVILLA </h2>
+                    </div>
+                    <div class="column">
+                        <h4>Ased do eiusm tempor incidi ut labore et dolore magnaian aliqua. Ut enim ad minim veniam.</h4>
+                        <h4>ame@domain.com</h4>
+                        <h4>+1 (222) 1234567890</h4>
+                    </div>
+                </div>
+                <div class="bottom_bar_container">
+                    <div>About Devloon</div>
+                    <div class="column">
+                        <h5>About us</h5>
+                        <h5>Careers</h5>
+                        <h5>Terms of service</h5>
+                        <h5>Privacy policy</h5>
+                    </div>
+                </div>
+                <div class="bottom_bar_container">
+                    <div class="row">Top Brands</div>
+                    <div class="row">
+                        <div class="column">
+                            <h5>Mercedes</h5>
+                            <h5>Lamborghini</h5>
+                            <h5>BMW</h5>
+                            <h5>Land Rover</h5>
+                            <h5>Aston martin</h5>
+                            <h5>Opel</h5>
+                        </div>
+                        <div class="column">
+                            <h5>Infiniti</h5>
+                            <h5>Porsche</h5>
+                            <h5>Camaro</h5>
+                            <h5>Nissan</h5>
+                            <h5>Audi</h5>
+                            <h5>Ferrarri</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom_bar_container">
+                    <div class="row">News Letter</div>
+                    <div class="column">
+                        <h4>News Letter</h4>
+                        <h5>Subscribe to get latest news update and informations</h5>
+                        <input class="textfield_container" type="text" name="email" value="Add email" id="email">
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_bar">
+                <div style="display: flex;width: 90%;flex-direction: column;">
+                    <hr style="width: 90%;background-color: #7378db;">
+                    <div class="row">
+                        <h5 style="display: flex;padding: 1%;align-self: start;">© Copyright. Designed And Developed By Themesine.</h5>
+                        
+                            <div class="icon_box">
+                                <svg class="svg_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+                            </div>
+                            <div class="icon_box">
+                                <svg class="svg_icon" fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                            </div>
+                            <div class="icon_box">
+                                <svg class="svg_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
+                            </div>
+                            <div class="icon_box">
+                             <svg class="svg_icon" fill="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3 .8-3.4 5-20.3 6.9-28.1 .6-2.5 .3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z"/></svg>
+                            </div>
+                      
+                    </div>
+                </div>
+            </div>
+    </div> 
+        <script>
+            var is_clicked=false;
+            function toggle_state() {
+    var icon = document.getElementById("menu_icon");
+    if (icon.classList.contains("active")) {
+        icon.classList.remove("active");
+        console.log("Icon is inactive");
+    } else {
+        icon.classList.add("active");
+        console.log("Icon is active");
+    }
+}
+window.innerWidth-le768px?console.log("hey"):console.log("hlo");
+
+ 
+            window.onscroll = function() {scrollFunction()};
+            function scrollFunction() {
+                var rowContainer = document.getElementById("rowContainer");
+                if (document.body.scrollTop > 50|| document.documentElement.scrollTop > 50 ) {
+                    rowContainer.classList.add("sticky");
+                } else {
+                    rowContainer.classList.remove("sticky");
+                }
+            }
+            let slideIndex = 0;
+
+function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("slide_show");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1} 
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "flex"; 
+    dots[slideIndex-1].className += "active";
+    setTimeout(showSlides, 3000); 
+}
+showSlides();
+        </script>
+</body>
+</html>
+<!-- || document.documentElement.scrollTop > 50 -->
